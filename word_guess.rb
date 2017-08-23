@@ -6,7 +6,6 @@ class WordGuess
     @debug = debug
 
     @words = {}
-    @index = 0
     CSV.foreach("words.csv") do |row|
       level = row.shift
       @words[level] = row
